@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokédex</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <h1>Pokédex</h1>
+        <input id="search-bar" placeholder="Search for a pokemon">
+      </header>
+
+      <main class="page-content">
+        <ul class="pokemon-list">
+          <!--<li class="pokemon-list__item"><button class="pokemon-list__button water">Wartortle</button></li>
+         -->
+        </ul>
+
+        <div id='modal-container'>
+          <div class="modal">
+            <button class="modal-close">Close</button>
+            <h2></h2>
+            <div>
+              <img src="" alt="" class="pokemon-image">
+            </div>
+            <p class="green"></p>
+            <p class="violet"></p>
+          </div>
+        </div>
+        
+      </main>
+
+      <footer class="page-footer">
+          <div class="media-links">
+            <a href="https://github.com/KiraSl" target="_blank"><img src="img/github-icon.svg" alt="Github"></a>
+            <p>
+            Pokemon provided by 
+            <a href="https://pokeapi.co/" target="_blank">PokéAPI</a>
+            </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

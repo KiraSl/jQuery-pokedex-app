@@ -1,0 +1,15 @@
+{
+  "name": "jquery-pokedex-app",
+  "version": "1.0.0",
+  "description": "A copy of Pokedex app, but with jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "KS",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
