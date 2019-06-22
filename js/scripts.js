@@ -1,4 +1,5 @@
-var pokemonRepository = (function () {
+(function () {
+  var pokemonRepository = (function () {
   var repository = [];
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=152';
 
@@ -48,7 +49,7 @@ var pokemonRepository = (function () {
     $listItem.append($button);
     $list.append($listItem);
 
-    // Load pokemon details when click on the button with its name
+    // Show pokemon details when click on the button with its name
     $button.on('click', function() {
       showDetails(pokemon);
     });
@@ -130,4 +131,4 @@ pokemonRepository.loadList().then(function() {
     pokemonRepository.addListItem(pokemon);
   });
 });
-
+}) ();
