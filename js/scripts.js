@@ -94,7 +94,7 @@
   //Close modal on pressing outside the main modal box 
   $modalContainer.on('click', (e) => {
     var target = e.target;
-    if (target === $modalContainer) {
+    if (target === $modalContainer[0]) {
       hideModal();
     }
   });
