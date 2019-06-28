@@ -67,10 +67,17 @@
     //Show pokemon name 
     $('h2').text(item.name); 
     
-     //Show pokemon height and types 
-    $('.green').text(`Height: ${item.height}m`);
-    $('.violet').text(`Types: ${item.types.join(', ')}`);
+    //Show pokemon height
+    $('.text-green').text(`Height: ${item.height}m`);
+   
+    var typesDescription = $('.text-black span');
+    typesDescription.empty();
 
+    //Show types, each to have a different color
+    $(item.types).each(function (type) {
+      var typeSpan = $(`<span class="${this}">${this} </span>`);
+      typesDescription.append(typeSpan);
+    });
      //Show pokemon image 
     $('.pokemon-image').attr('src', item.imageUrl).attr('alt', `image of ${item.name}`);
     
@@ -115,7 +122,6 @@
     });
   }
 
-  //item.toLowerCase().indexOf(text)
   return {
     add: add,
     getAll: getAll,
