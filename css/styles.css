@@ -1,5 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -9,116 +8,54 @@ html, body {
 body {
   font-family: 'Asap', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: #ffbb00;
   color: #0f0f0f; }
 
 h1 {
-  letter-spacing: 0.2em;
-  font-size: 48px;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fb6442), to(#ffbb00));
-  background-image: -webkit-linear-gradient(#fb6442, #ffbb00);
-  background-image: -o-linear-gradient(#fb6442, #ffbb00);
   background-image: linear-gradient(#fb6442, #ffbb00);
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  margin: 0;
+  text-align: center; }
 
 h2 {
   text-transform: capitalize; }
 
 .wrapper {
-  display: -ms-grid;
-  display: grid;
-  min-height: 100%;
-  -ms-grid-columns: 150px 1fr 150px;
-  grid-template-columns: 150px 1fr 150px;
-  -ms-grid-rows: 100px 1fr 80px;
-  grid-template-rows: 100px 1fr 80px; }
-
-.wrapper > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1; }
-
-.wrapper > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2; }
-
-.wrapper > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3; }
-
-.wrapper > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1; }
-
-.wrapper > *:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2; }
-
-.wrapper > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3; }
-
-.wrapper > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1; }
-
-.wrapper > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2; }
-
-.wrapper > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3; }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 60rem;
+  margin: 0 auto; }
 
 .page-header {
   background-color: #fff;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
   border-bottom: 3px solid #ffbb00;
-  border-top: 3px solid #ffbb00; }
+  border-top: 3px solid #ffbb00;
+  flex-basis: auto;
+  padding: 1rem; }
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
 
 #search-bar {
-  margin-left: 100px;
-  padding-left: 10px;
-  width: 200px;
-  height: 30px; }
+  width: 15rem;
+  height: 2rem;
+  padding-left: 1rem; }
 
 .page-content {
   background-color: #fff;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3; }
+  overflow-y: scroll; }
 
 .page-footer {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  background-color: #fb6442; }
-
-.page-header,
-.page-content,
-.page-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  background-color: #fb6442;
+  padding: 0.5rem; }
 
 .media-links {
   text-align: center; }
@@ -130,15 +67,14 @@ h2 {
 
 .pokemon-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 80%;
+  width: 90%;
+  max-width: 40rem;
   text-align: center; }
 
 .pokemon-list__item {
-  margin: 1em 1em;
-  display: inline-block;
-  width: 20%; }
+  margin: 1rem; }
 
 /*-----Buttons-----*/
 button {
@@ -148,24 +84,19 @@ button {
   padding: 0;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s; }
   button:hover, button:focus {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
     transform: scale(1.01); }
 
 .pokemon-list__button {
-  padding: 1em;
+  padding: 1rem;
   width: 100%;
   color: #fff;
   background-color: #86ac41;
-  letter-spacing: 0.1em;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.1rem;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   text-transform: capitalize;
-  min-width: 150px; }
+  min-width: 10rem; }
   .pokemon-list__button:hover, .pokemon-list__button:focus {
     background-color: #698733; }
 
@@ -175,8 +106,7 @@ button {
 
 #modal-container.is-visible {
   position: fixed;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
+  padding: 1.5rem;
   box-sizing: border-box;
   top: 0;
   left: 0;
@@ -191,7 +121,6 @@ button {
 .modal {
   margin: auto;
   display: inline-block;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: #fff;
   padding: 15px;
@@ -209,16 +138,43 @@ button {
 .pokemon-image {
   display: inline-block; }
 
-.green {
+.text-green {
   color: #86ac41;
   font-weight: 700; }
 
-.violet {
-  color: #9055a2;
+.text-black {
+  color: #0f0f0f;
   font-weight: 700; }
 
+.normal {
+  color: #231b12; }
+
+.fighting {
+  color: #752a07; }
+
+.flying {
+  color: #5b7065; }
+
+.poison {
+  color: #f52549; }
+
+.ground {
+  color: #7d4427; }
+
+.rock {
+  color: #73605b; }
+
+.bug {
+  color: #c05805; }
+
+.ghost {
+  color: #a2c523; }
+
+.steel {
+  color: #9a9eab; }
+
 .fire {
-  color: red; }
+  color: #cd7213; }
 
 .water {
   color: blue; }
@@ -226,21 +182,43 @@ button {
 .grass {
   color: green; }
 
-.normal {
-  color: black; }
+.electric {
+  color: #edae01; }
+
+.psychic {
+  color: #f18d9e; }
+
+.ice {
+  color: #66a5ad; }
+
+.dragon {
+  color: #de7a22; }
+
+.dark {
+  color: #021c1e; }
+
+.fairy {
+  color: #5bc8ac; }
+
+.shadow {
+  color: #523634; }
 
 /*-----Media Queries -----*/
 @media all and (max-width: 375px) {
   .pokemon-list__button {
     width: 90%; } }
 
+@media all and (min-width: 900px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between; } }
+
 @media all and (max-width: 750px) {
   .pokemon-list__item {
-    margin: 0.2em;
+    margin: 0.2rem;
     display: block;
     width: 80%; } }
 
 @media all and (max-width: 900px) {
   .wrapper {
-    -ms-grid-columns: 0 1fr 0;
     grid-template-columns: 0 1fr 0; } }
