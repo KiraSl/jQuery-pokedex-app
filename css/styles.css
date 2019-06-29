@@ -51,3 +51,8 @@ button {
     background-color: #698733; }
 
 /* ------ MODAL ------ */
+#modal-container {
+  display: none; }
+
+#modal-container.is-visible {
+  display: grid; }

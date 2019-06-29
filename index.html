@@ -36,15 +36,20 @@
           <div clss="col-2"></div>
         </div>
 
-        <div id="modal-container">
-          <div class="modal">
-            <button class="modal-close">Close</button>
-            <h2>Pokemon name</h2>
-            <div>
-              <img src="#" alt="" class="pokemon-image">
+        <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <!--<button class="modal-close">Close</button>-->
+              <h2>Pokemon name</h2>
+              <div>
+                <img src="#" alt="" class="pokemon-image">
+              </div>
+              <p class="text-green"></p>
+              <p class="text-black">Types: <span></span></p>
             </div>
-            <p class="text-green"></p>
-            <p class="text-black">Types: <span></span></p>
           </div>
         </div>
       </main>
