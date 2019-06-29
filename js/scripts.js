@@ -44,7 +44,7 @@
   function addListItem(pokemon) {
     var $list = $('.pokemon-list');
     var $listItem = $('<li class="pokemon-list__item"></li>');
-    var $button = $('<button class="pokemon-list__button">' + pokemon.name + '</button>');
+    var $button = $('<button class="pokemon-list__button btn-block p-3 m-1 text-capitalize">' + pokemon.name + '</button>');
     
     $listItem.append($button);
     $list.append($listItem);
