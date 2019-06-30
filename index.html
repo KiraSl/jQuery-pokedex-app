@@ -13,7 +13,7 @@
 
   <body class="container-fluid">
     <div class="wrapper row">
-      <header class="page-header container col-8 bg-white">
+      <header class="page-header container col-12 col-md-8 bg-white">
           <div class="row justify-content-between align-items-center p-2">
             <h1 class="font-weight-bold">Pokédex</h1>
             <div class="search-container"> 
@@ -22,10 +22,9 @@
           </div>
       </header>
 
-
       <main class="page-content container-fluid">
         <div class="row">
-          <div class="col-8 bg-white mx-auto scroll">
+          <div class="col-12 col-md-8 bg-white mx-auto scroll">
             <div class="col-8 mx-auto">
               <ul class="pokemon-list list-group list-unstyled">
                 <!--<li class="pokemon-list__item"><button class="pokemon-list__button water">Wartortle</button></li>
@@ -33,22 +32,20 @@
               </ul>
             </div>
           </div>
-          <div clss="col-2"></div>
         </div>
 
-        <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+        <div class="modal" id="modal-container" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog text-center" role="document">
             <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
-              <!--<button class="modal-close">Close</button>-->
               <h2>Pokemon name</h2>
               <div>
                 <img src="#" alt="" class="pokemon-image">
               </div>
-              <p class="text-green"></p>
-              <p class="text-black">Types: <span></span></p>
+              <p class="text-green font-weight-bold"></p>
+              <p class="text-black font-weight-bold">Types: <span></span></p>
             </div>
           </div>
         </div>
