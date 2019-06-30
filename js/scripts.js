@@ -89,7 +89,7 @@
   }
   
    //Close modal by pressing on Close button
-   $('.close').on('click', hideModal);
+   $('.modal-close').on('click', hideModal);
 
   // Close modal on pressing Esc button
   $(window).on('keydown', (e) => {

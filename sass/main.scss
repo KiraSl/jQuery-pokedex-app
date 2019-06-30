@@ -25,10 +25,6 @@ color: transparent;
 margin: 0;
 }
 
-h2 {
-  text-transform: capitalize;
-}
-
 .wrapper {
   height: 100vh;
 }
@@ -87,104 +83,163 @@ transition: all 0.2s;
   }
 
 /* ------ MODAL ------ */
+// #modal-container {
+//   display: none;
+// }
 
-#modal-container.is-visible {
-  background: rgba(255, 187, 0, 0.7);
-  display: grid;
+// #modal-container.is-visible {
+//   position: fixed;
+//   padding: 1.5rem;
+//   box-sizing: border-box;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(255, 187, 0, 0.7);
+
+//   //to show it above other content
+//   z-index: 999;
+
+//   //to allow scrolling if the screen is not high enough 
+//   overflow: auto;
+
+//   //to center the modal
+display: grid;
+//   text-align: center;
 }
 
-.modal-dialog {
-  margin: auto;
-  width: 100%;
-  max-width: 400px;
-}
+// .modal-dialog {
+//   margin: auto;
+//   display: inline-block; 
+//   box-sizing: border-box; 
+//   background: $color-white;
+//   padding: 15px;
+//   width: 100%;
+//   max-width: 400px;
+//   text-align: center;
+// }
 
-.close span {
-  float: right;
-  padding-right: 0.5rem;
-}
+// .modal-close {
+//   float: right;
+//   border: 0; 
+//   background: none; 
+//   color: #777;
+//   text-decoration: underline;
+// }
 
-.text-green {
-  color: $color-green;
-}
+// .pokemon-image {
+//   display: inline-block;
+// }
 
-.text-black {
-  color: $color-black;
-}
+// .text-green {
+//   color: $color-green;
+//   font-weight: 700;
+// }
 
-.normal {
-  color: #231b12;
-}
+// .text-black {
+//   color: $color-black;
+//   font-weight: 700;
+// }
 
-.fighting {
-  color: #752a07;
-}
+// .normal {
+//   color: #231b12;
+// }
 
-.flying {
-  color: #5b7065;
-}
+// .fighting {
+//   color: #752a07;
+// }
 
-.poison {
-  color: #f52549;
-}
+// .flying {
+//   color: #5b7065;
+// }
 
-.ground{
-  color: #7d4427;
-}
+// .poison {
+//   color: #f52549;
+// }
 
-.rock {
-  color: #73605b;
-}
+// .ground{
+//   color: #7d4427;
+// }
 
-.bug {
-  color: #c05805;
-}
+// .rock {
+//   color: #73605b;
+// }
 
-.ghost {
-  color: #a2c523;
-}
+// .bug {
+//   color: #c05805;
+// }
 
-.steel {
-  color: #9a9eab;
-}
+// .ghost {
+//   color: #a2c523;
+// }
 
-.fire {
-  color: #cd7213;
-}
+// .steel {
+//   color: #9a9eab;
+// }
 
-.water {
-  color: blue; 
-}
+// .fire {
+//   color: #cd7213;
+// }
 
-.grass {
-  color: green; 
-}
+// .water {
+//   color: blue; 
+// }
 
-.electric {
-  color: #edae01;
-}
+// .grass {
+//   color: green; 
+// }
 
-.psychic {
-  color: #f18d9e;
-}
+// .electric {
+//   color: #edae01;
+// }
 
-.ice {
-  color: #66a5ad;
-}
+// .psychic {
+//   color: #f18d9e;
+// }
 
-.dragon {
-  color: #de7a22;
-}
+// .ice {
+//   color: #66a5ad;
+// }
 
-.dark {
-  color: #021c1e;
-}
+// .dragon {
+//   color: #de7a22;
+// }
 
-.fairy {
-  color: #5bc8ac;
-}
+// .dark {
+//   color: #021c1e;
+// }
 
-.shadow {
-  color: #523634;
-}
+// .fairy {
+//   color: #5bc8ac;
+// }
 
+// .shadow {
+//   color: #523634;
+// }
+
+// /*-----Media Queries -----*/
+// @media all and (max-width: 375px) {
+//   .pokemon-list__button  {
+//     width: 90%;
+//   }
+// }
+// @media all and (min-width: 900px) {
+//   .page-header {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+
+// @media all and (max-width: 750px) {
+//   .pokemon-list__item {
+//     margin: 0.2rem;
+//     display: block;
+//     width: 80%;
+//   }
+// }
+
+// @media all and (max-width: 900px) {
+//   .wrapper {
+//     grid-template-columns: 0 1fr 0;
+//   }
+// }
