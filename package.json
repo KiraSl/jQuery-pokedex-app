@@ -7,9 +7,23 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jquery": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+        "quotes": ["error", "single"]
+    }
+  },
   "author": "KS",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^6.0.1",
     "node-sass": "^4.12.0"
   }
 }
